@@ -320,7 +320,10 @@ section:last-child {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 	.mainDetails, #mainArea {
-		padding: 10px 35px 10px 15px;
+		padding: 10px 25px;
+	}
+	#mainArea {
+		margin-right: 15px;
 	}
 	.keylist {
 		-moz-column-count: 3;
