@@ -330,6 +330,7 @@ section:last-child {
 	}
 	#cv {
 		padding-right: 10px;
+		margin-right: 10px;
 	}
 	#name h1 {
 		line-height: .8em;
