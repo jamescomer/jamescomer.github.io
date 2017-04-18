@@ -313,10 +313,6 @@ section:last-child {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-	html, body {
-		width: 100%;
-		overflow-x: hidden;
-	}
 	.mainDetails, #mainArea {
 		padding: 10px 15px;
 	}
