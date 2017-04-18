@@ -313,17 +313,6 @@ section:last-child {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-	#cv {
-			width: 95%;
-			margin: 10px auto;
-			min-width: 510px;
-	}
-	.splitSection {
-		float: top;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
 	.mainDetails, #mainArea {
 		padding: 10px 15px;
 	}
