@@ -345,6 +345,10 @@ section:last-child {
 	.mainDetails, #mainArea {
 		padding: 10px 25px;
 	}
+	.keylist li {
+		height: 25px;
+		width: 100%;
+	}
 }
 
 @media print {
