@@ -318,6 +318,10 @@ section:last-child {
 			margin: 10px auto;
 			min-width: 510px;
 	}
+	#sectionOne, #sectionTwo {
+		margin: 0;
+		padding: 0;
+	}
 	.splitSection {
 		float: none;
 		width: 100%;
@@ -346,11 +350,6 @@ section:last-child {
 	}
 	#splitClear {
 		display: none;
-	}
-	div.splitSection {
-		padding-top: 0;
-		margin-top: 0;
-		margin-bottom: 0;
 	}
 }
 
