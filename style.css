@@ -326,7 +326,7 @@ section:last-child {
 	}
 	
 	#mainArea {
-		padding: 0;
+		padding-right: 15px;
 	}
 	#cv {
 		padding-right: 10px;
@@ -335,6 +335,15 @@ section:last-child {
 	#name h1 {
 		line-height: .8em;
 		margin-bottom: 4px;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	.mainDetails, #mainArea {
+		padding: 10px 15px;
 	}
 }
 
