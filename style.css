@@ -356,7 +356,10 @@ section:last-child {
 	}
 	.keylist li {
 		height: 25px;
-		width: 40%;
+		width: 90%;
+	}
+	#splitClear {
+		display: none;
 	}
 }
 
