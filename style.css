@@ -309,7 +309,7 @@ section:last-child {
 	.keylist li {
 	border: 2px solid #cf8a05;
 	border-radius: 4px; /* (height of inner div) / 2 + padding */
-	width: 70%;
+	width: 80%;
 	display: inline-block;
 	margin-top: 5px;
 	text-align: center;
