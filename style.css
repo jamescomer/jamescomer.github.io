@@ -242,12 +242,6 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
-@media all and (min-width: 800px) and (max-width: 800px) {
-	#headshot {
-		display: none;
-	}
-}
-
 @media all and (max-width: 800px) {
 	#cv {
 		width: 95%;
@@ -333,6 +327,7 @@ section:last-child {
 		-webkit-column-gap: 5px;
 		column-gap: 5px;
 		font-size: 1em;
+		margin-bottom: 0;
 	}
 	.keylist li {
 		height: 25px;
@@ -340,6 +335,9 @@ section:last-child {
 	}
 	#splitClear {
 		display: none;
+	}
+	.splitSection {
+		padding-top: 0;
 	}
 }
 
