@@ -297,7 +297,6 @@ section:last-child {
 		direction: rtl;
 	}
 	.keylist {
-	list-style-type: none;
 	font-size: 0.7em;
 	-moz-column-count: 5;
     -webkit-column-count: 5;
@@ -316,34 +315,12 @@ section:last-child {
 	}
 }
 
-/* @media all and (max-width: 480px) {
-	.mainDetails {
-		padding: 10px 15px;
-	}
-	
-	section {
-		padding: 15px 0 0;
-	}
-	
-	#mainArea {
-		padding-right: 15px;
-	}
-	#cv {
-		padding-right: 10px;
-		margin-right: 10px;
-	}
-	#name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
-	}
-} */
-
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 	.mainDetails, #mainArea {
-		padding: 10px 25px;
+		padding: 10px 35px 10px 15px;
 	}
 	.keylist {
 		-moz-column-count: 3;
@@ -409,6 +386,7 @@ section:last-child {
 		text-align: left;
 	}
 	ul.keylist {
+		list-style-type: none;
 		-moz-column-count: 3;
 		-webkit-column-count: 3;
 		column-count: 3;
