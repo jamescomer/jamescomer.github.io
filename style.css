@@ -349,6 +349,9 @@ section:last-child {
 	#splitClear {
 		display: none;
 	}
+	#sectionOne {
+		background-color: black;
+	}
 }
 
 @media print {
