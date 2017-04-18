@@ -336,9 +336,10 @@ section:last-child {
 	#splitClear {
 		display: none;
 	}
-	.splitSection {
+	div.splitSection {
 		padding-top: 0;
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
 
