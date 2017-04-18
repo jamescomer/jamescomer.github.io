@@ -307,6 +307,9 @@ section:last-child {
 	margin-top: 5px;
 	text-align: center;
 	}
+	#sectionOne {
+		background-color: black;
+	}
 }
 
 @media only screen 
