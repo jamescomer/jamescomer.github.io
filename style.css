@@ -345,6 +345,14 @@ section:last-child {
 	.mainDetails, #mainArea {
 		padding: 10px 25px;
 	}
+	.keylist {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		-moz-column-gap: 0;
+		-webkit-column-gap: 0;
+		column-gap: 0;
+	}
 	.keylist li {
 		height: 25px;
 		width: 100%;
