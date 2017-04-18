@@ -307,9 +307,6 @@ section:last-child {
 	margin-top: 5px;
 	text-align: center;
 	}
-	#sectionOne {
-		background-color: black;
-	}
 }
 
 @media only screen 
@@ -351,9 +348,6 @@ section:last-child {
 	}
 	#splitClear {
 		display: none;
-	}
-	#sectionOne {
-		background-color: black;
 	}
 }
 
