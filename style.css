@@ -302,14 +302,14 @@ section:last-child {
 	-moz-column-count: 5;
     -webkit-column-count: 5;
     column-count: 5;
-	-moz-column-gap: 5px;
-    -webkit-column-gap: 5px;
-    column-gap: 5px;
+	-moz-column-gap: 10%;
+    -webkit-column-gap: 10%;
+    column-gap: 10%;
 	}
 	.keylist li {
 	border: 2px solid #cf8a05;
 	border-radius: 4px; /* (height of inner div) / 2 + padding */
-	width: 80px;
+	width: 70%;
 	display: inline-block;
 	margin-top: 5px;
 	text-align: center;
