@@ -318,6 +318,9 @@ section:last-child {
 			margin: 10px auto;
 			min-width: 510px;
 	}
+	#sectionOne {
+		background-color: black;
+	}
 	.splitSection {
 		float: top;
 		width: 100%;
