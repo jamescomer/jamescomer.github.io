@@ -328,10 +328,12 @@ section:last-child {
 		column-gap: 5px;
 		font-size: 1em;
 		margin-bottom: 0;
+		padding: 0;
 	}
 	.keylist li {
 		height: 25px;
 		width: 70%;
+		padding: 0;
 	}
 	#splitClear {
 		display: none;
