@@ -316,12 +316,15 @@ section:last-child {
 	}
 }
 
-@media all and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
 	.mainDetails {
 		padding: 10px 15px;
 	}
 	.mainArea {
 		padding: 10px 15px;
+	}
+	#sectionOne, #sectionTwo {
+		margin-right: 10px;
 	}
 	section {
 		padding: 15px 0 0;
