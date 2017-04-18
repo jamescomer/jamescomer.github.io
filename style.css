@@ -337,7 +337,76 @@ section:last-child {
 		margin-bottom: 4px;
 	}
 }
-
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		#cv {
+		width: 95%;
+		margin: 10px auto;
+		min-width: 510px;
+	}
+	#sectionOne {
+		border: none;
+	}
+	#headshot {
+		display: none;
+	}
+	
+	#name, #contactDetails {
+		float: none;
+		width: 100%;
+		text-align: right;
+	}
+	
+	.splitSection {
+		float: none;
+		width: 100%;
+	}
+	h1, h2, h3, p, .description {
+		text-align: right;
+	}
+	ul {
+		direction: rtl;
+	}
+	ul li {
+		list-style-position: outside;
+		margin-right: 1em;
+	}
+	.skillsSplit {
+		float: right;
+		text-align: right;
+	}
+	.educationListColumned {
+	list-style-position: inside;
+	font-size: 0.7em;
+	-moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+	margin-bottom: 10px;
+	}
+	#uni ul, #school ul {
+		direction: rtl;
+	}
+	.keylist {
+	list-style-type: none;
+	font-size: 0.7em;
+	-moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+	-moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+	}
+	.keylist li {
+	border: 2px solid #cf8a05;
+	border-radius: 4px; /* (height of inner div) / 2 + padding */
+	width: 70%;
+	display: inline-block;
+	margin-top: 5px;
+	text-align: center;
+	}
+}
 @media print {
     #cv {
         width: 100%;
