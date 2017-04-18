@@ -309,26 +309,22 @@ section:last-child {
 	.keylist li {
 	border: 2px solid #cf8a05;
 	border-radius: 4px; /* (height of inner div) / 2 + padding */
-	width: 70%;
+	width: 80px;
 	display: inline-block;
 	margin-top: 5px;
 	text-align: center;
 	}
 }
 
-@media only screen and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
 	.mainDetails {
 		padding: 10px 15px;
 	}
-	.mainArea {
-		padding: 10px 15px;
-	}
-	#sectionOne, #sectionTwo {
-		margin-right: 10px;
-	}
+	
 	section {
 		padding: 15px 0 0;
 	}
+	
 	#mainArea {
 		padding: 0;
 	}
@@ -341,6 +337,7 @@ section:last-child {
 		margin-bottom: 4px;
 	}
 }
+
 @media print {
     #cv {
         width: 100%;
