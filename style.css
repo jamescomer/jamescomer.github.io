@@ -79,7 +79,7 @@ p {
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444; 
+	color: #444;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -88,7 +88,7 @@ p {
 	transition: all .3s ease-in;
 }
 
-#contactDetails ul li a:hover { 
+#contactDetails ul li a:hover {
 	color: #cf8a05;
 }
 
@@ -163,6 +163,12 @@ section:last-child {
 	direction: rtl;
 }
 
+#sectionTwo .keylist {
+	direction: ltr;
+	float: left;
+	margin-left: 0;
+}
+
 .keylist li {
 	border: 2px solid #cf8a05;
 	border-radius: 4px; /* (height of inner div) / 2 + padding */
@@ -202,15 +208,15 @@ section:last-child {
 	padding: 0 15px;
 }
 
-#sectionOne {
+.splitSection:nth-child(1) {
 	border-right: 2px solid #cf8a05;
 	border-width: 3px;
-    -webkit-border-image: 
+    -webkit-border-image:
       -webkit-gradient(linear, 0 0, 0 100%, from(#cf8a05), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
+    -webkit-border-image:
       -webkit-linear-gradient(#cf8a05, rgba(0, 0, 0, 0)) 1 100%;
     -moz-border-image:
-      -moz-linear-gradient(#cf8a05, rgba(0, 0, 0, 0)) 1 100%;    
+      -moz-linear-gradient(#cf8a05, rgba(0, 0, 0, 0)) 1 100%;
     -o-border-image:
       -o-linear-gradient(#cf8a05, rgba(0, 0, 0, 0)) 1 100%;
     border-image:
@@ -242,6 +248,12 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
+@media all and (min-width: 800px) and (max-width: 800px) {
+	#headshot {
+		display: none;
+	}
+}
+
 @media all and (max-width: 800px) {
 	#cv {
 		width: 95%;
@@ -254,13 +266,13 @@ section:last-child {
 	#headshot {
 		display: none;
 	}
-	
+
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: right;
 	}
-	
+
 	.splitSection {
 		float: none;
 		width: 100%;
@@ -291,66 +303,50 @@ section:last-child {
 		direction: rtl;
 	}
 	.keylist {
+	list-style-type: none;
 	font-size: 0.7em;
-	-moz-column-count: 5;
-    -webkit-column-count: 5;
-    column-count: 5;
-	-moz-column-gap: 10%;
-    -webkit-column-gap: 10%;
-    column-gap: 10%;
+	-moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+	-moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
 	}
 	.keylist li {
 	border: 2px solid #cf8a05;
 	border-radius: 4px; /* (height of inner div) / 2 + padding */
-	width: 80%;
+	width: 70%;
 	display: inline-block;
 	margin-top: 5px;
 	text-align: center;
 	}
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-	#skillsClear {
-		background-color: black;
-	}
-  }
-
-/* @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-	.mainDetails, #mainArea {
+@media all and (max-width: 480px) {
+	.mainDetails {
 		padding: 10px 15px;
 	}
+
+	section {
+		padding: 15px 0 0;
+	}
+
 	#mainArea {
-		margin-right: 15px;
-	}
-	.keylist {
-		-moz-column-count: 3;
-		-webkit-column-count: 3;
-		column-count: 3;
-		-moz-column-gap: 5px;
-		-webkit-column-gap: 5px;
-		column-gap: 5px;
-		font-size: 1em;
-		margin-bottom: 0;
 		padding: 0;
 	}
-	.keylist li {
-		height: 25px;
-		width: 70%;
-		padding: 0;
+
+	#name h1 {
+		line-height: .8em;
+		margin-bottom: 4px;
 	}
-	#splitClear {
-		display: none;
-	}
-} */
+}
 
 @media print {
-    #cv {
+	.educationList, #uni ul, #school ul {
+		direction: ltr;
+		list-style-position: inside;
+	}
+  #cv {
         width: 100%;
     }
 	#name h1 {
@@ -367,6 +363,10 @@ section:last-child {
 	#sectionTwo {
 		float: right;
 	}
+	#sectionTwo h3 {
+		text-align: left;
+	}
+
 	#sectionOne, #sectionTwo {
 		width: 45%;
 		display: inline-block;
@@ -389,25 +389,29 @@ section:last-child {
 	html, body, h1, h2, p  {
 		text-align: left;
 		overflow: hidden;
-		height: 99%;
+		height: 98%;
 	}
 	div.progressbar > div {
 		text-align: left;
 	}
 	ul.keylist {
-		list-style-type: none;
-		-moz-column-count: 3;
-		-webkit-column-count: 3;
-		column-count: 3;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
 		-moz-column-gap: 5px;
 		-webkit-column-gap: 5px;
 		column-gap: 5px;
 	}
 	ul.keylist li {
 		float: left;
+		border: none;
+		text-align: left; 
 	}
 	ul.keylist li:first-child {
 		margin-left: 0;
+	}
+	p.description {
+		text-align: left;
 	}
 }
 
@@ -478,11 +482,11 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 1.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
